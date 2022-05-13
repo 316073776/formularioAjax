@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario AJAX</title>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+		<script src="js/peticionAjax.js"></script>
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<h1>FORMULARIO</h1>
+
+		<form id="formulario">
+
+			<label for="nombre">Nombre: </label>
+			<input type="text" name="nombre" id="nombre" required>
+			<div id="err_nombre"></div>
+			<br/>
+
+			<label for="apaterno">Apellido Paterno: </label>
+			<input type="text" name="apaterno" id="apaterno" required>
+			<div id="err_apaterno"></div>
+			<br/>
+
+			<label for="amaterno">Apellido Materno: </label>
+			<input type="text" name="amaterno" id="amaterno">
+			<div id="err_amaterno"></div>
+			<br/>
+
+			<label for="ciudad">Ciudad: </label>
+			<input type="text" name="ciudad" id="ciudad" required>
+			<div id="err_ciudad"></div>
+			<br/>
+
+			<input type="button" id="enviar" name="enviar" value="Enviar">
+
+		</form>
+
+		<div>
+			<h2 id="respuesta"></h2>
+		</div>
+	</body>
+
+</html>
